@@ -20,33 +20,5 @@ class ApiView {
         );
         return (isset($status[$code])) ? $status[$code] : $status[500];
     }
-
-    /*
-
-    function showEdit($id_product) {
-        
-        // asigno variables al tpl smarty
-        // $this->smarty->assign('count', count($productos)); 
-        $this->smarty->assign('id_product', $id_product);
-
-        // mostrar el tpl
-        $this->smarty->display('form_edit_product.tpl');
-    }
-
-    function printEdit($editarproductos, $productos) {
-        // asigno variables al tpl smarty
-        $this->smarty->assign('count', count($productos));
-        $this->smarty->assign('editarproductos', $editarproductos);
-        $this->smarty->assign('productos', $productos);
-
-        // mostrar el tpl
-        $this->smarty->display('productList.tpl');
-    }
-
-    function showError($message){
-        echo "<h1>ERROR!</h1>";
-        echo "<h2>$message</h2>";
-    }
-*/
    
 }
